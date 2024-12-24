@@ -1,0 +1,20 @@
+$unit: 10px;
+$color-main: #118dde;
+$color-light: rgba(17, 141, 222, 0.11);
+
+body {
+  max-width: 600px;
+  padding-left: $unit * 2;
+  font-family: "Google Sans";
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $color-main;
+  background-color: $color-light;
+
+  &:visited {
+    color: $color-main;
+  }
+}

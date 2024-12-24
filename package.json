@@ -4,8 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "watch:sass": "sass --watch src/_sass:_site/assets/styles",
+    "build:sass": "sass src/_sass:_site/assets/styles",
     "build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
-    "serve": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental"
+    "serve": "DEBUG=Eleventy* tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve"
   },
   "keywords": [],
   "author": "",
